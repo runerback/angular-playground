@@ -1,10 +1,53 @@
 <ng-container>
-    <app-join-items [spliter]="itemSpliter" [nzData]="wheels" [itemTemplate]="itemTemplate" #items>
+    <app-join-items
+        [spliter]="itemSpliter"
+        [nzData]="wheels"
+        [itemTemplate]="itemTemplate"
+        #items
+    >
         <ng-template #itemSpliter>
             <br />
         </ng-template>
-        <ng-template #itemTemplate [appJoinItemTemplate]="items" let-item="item" let-index="index">
-            <span>{{item.name}} / {{index}}</span>
+        <ng-template
+            #itemTemplate
+            [appJoinItemTemplate]="items"
+            let-item="item"
+            let-index="index"
+        >
+            <div class="join-items-example-show-panel">
+                <div class="join-items-example-show-panel header">
+                    <span>{{ index }}</span>
+                </div>
+                <div class="join-items-example-details">
+                    <ul>
+                        <li>
+                            <span>NAME: {{ item.name }}</span>
+                        </li>
+                        <li>
+                            <span
+                                >SIZE: {{ item.diameter }}×{{
+                                    item.width
+                                }}J</span
+                            >
+                        </li>
+                        <li>
+                            <span>SPOKE: {{ item.spoke }}</span>
+                        </li>
+                        <li>
+                            <span>HOLD: {{ item.hold }}</span>
+                        </li>
+                        <li>
+                            <span>ET: {{ item.et }}</span>
+                        </li>
+                        <li>
+                            <span>PRODUCT TECH: {{ item.tech }}</span>
+                        </li>
+                        <li>
+                            <span>PCD: {{ item.pcd }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </ng-template>
     </app-join-items>
 </ng-container>

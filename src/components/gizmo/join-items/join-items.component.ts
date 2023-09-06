@@ -3,7 +3,7 @@ import { Component, Input, Output, TemplateRef } from '@angular/core';
 export type JoinItemsComponentContext<T> = {
     readonly item: T;
     readonly index: number;
-}
+};
 
 @Component({
     selector: 'app-join-items',
@@ -15,11 +15,12 @@ export class JoinItemsComponent<T = {}> {
      * spliter
      * @default ''
      */
-    @Input() spliter: string | TemplateRef<any> = "";
+    @Input() spliter: string | TemplateRef<any> = '';
     @Input() nzData: T[] = [];
-    @Input() itemTemplate: TemplateRef<JoinItemsComponentContext<T>> | null = null;
+    @Input() itemTemplate: TemplateRef<JoinItemsComponentContext<T>> | null =
+        null;
 
-    constructor() { }
+    constructor() {}
 
     @Output()
     get stringSpliter() {

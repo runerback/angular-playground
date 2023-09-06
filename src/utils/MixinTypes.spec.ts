@@ -1,4 +1,4 @@
-import { Mixin, MixinConstructor } from "./MixinTypes";
+import { Mixin, MixinConstructor } from './MixinTypes';
 
 describe('MixIn should work', () => {
     it('mixin example', () => {
@@ -17,7 +17,7 @@ describe('MixIn should work', () => {
                 set ExtendField(value: boolean) {
                     this._extendField = value;
                 }
-            }
+            };
         }
 
         const ModifiedDTO = ModifiedDTOMixIn(OriginalDTO);

@@ -1,1 +1,2 @@
-export * from "./gizmo";
+export * from './gizmo';
+export * from './pipes';

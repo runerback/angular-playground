@@ -16,29 +16,32 @@ type WheelHub = {
     templateUrl: './join-items-example.component.html',
     styleUrls: ['./join-items-example.component.less'],
 })
-export class JoinItemsComponentExample {
-    constructor() { }
+export class JoinItemsComponentExampleComponent {
+    constructor() {}
 
     @Output()
     get wheels(): WheelHub[] {
-        return [{
-            name: "Mk II",
-            diameter: 18,
-            width: 8.0,
-            spoke: 10,
-            hold: 5,
-            et: 35,
-            tech: "MAT",
-            pcd: "5x114.3",
-        }, {
-            name: "Mk II",
-            diameter: 19,
-            width: 8.5,
-            spoke: 10,
-            hold: 5,
-            et: 35,
-            tech: "MAT",
-            pcd: "5x114.3",
-        }];
+        return [
+            {
+                name: 'Mk II',
+                diameter: 18,
+                width: 8.0,
+                spoke: 10,
+                hold: 5,
+                et: 35,
+                tech: 'MAT',
+                pcd: '5x114.3',
+            },
+            {
+                name: 'Mk II',
+                diameter: 19,
+                width: 8.5,
+                spoke: 10,
+                hold: 5,
+                et: 35,
+                tech: 'MAT',
+                pcd: '5x114.3',
+            },
+        ];
     }
 }
