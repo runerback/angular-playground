@@ -1,0 +1,8 @@
+<ng-container *ngIf="nzData.length > 0 && itemTemplate">
+    <span *ngFor="let item of nzData; index as index; count as count;">
+        <ng-container [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{ item, index }"></ng-container><span
+            *ngIf="index < count - 1"><span *ngIf="stringSpliter; let spliter">{{spliter}}</span><span
+                *ngIf="templateSpliter; let spliter"><ng-container [ngTemplateOutlet]="spliter"></ng-container></span>
+        </span>
+    </span>
+</ng-container>

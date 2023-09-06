@@ -1,0 +1,10 @@
+<ng-container>
+    <app-join-items [spliter]="itemSpliter" [nzData]="wheels" [itemTemplate]="itemTemplate" #items>
+        <ng-template #itemSpliter>
+            <br />
+        </ng-template>
+        <ng-template #itemTemplate [appJoinItemTemplate]="items" let-item="item" let-index="index">
+            <span>{{item.name}} / {{index}}</span>
+        </ng-template>
+    </app-join-items>
+</ng-container>
