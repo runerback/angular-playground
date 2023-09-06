@@ -1,14 +1,14 @@
-import { Directive, Input } from '@angular/core';
+import { Directive, Input } from "@angular/core";
 import {
     JoinItemsComponent,
     JoinItemsComponentContext,
-} from '../join-items.component';
+} from "../join-items.component";
 
 /**
  * type check for `JoinItemsComponent` template
  */
 @Directive({
-    selector: 'ng-template[appJoinItemTemplate]',
+    selector: "ng-template[appJoinItemTemplate]",
 })
 export class JoinItemTemplateDirective<T = {}> {
     constructor() {}

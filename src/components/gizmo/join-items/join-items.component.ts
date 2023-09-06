@@ -1,4 +1,4 @@
-import { Component, Input, Output, TemplateRef } from '@angular/core';
+import { Component, Input, Output, TemplateRef } from "@angular/core";
 
 export type JoinItemsComponentContext<T> = {
     readonly item: T;
@@ -6,16 +6,16 @@ export type JoinItemsComponentContext<T> = {
 };
 
 @Component({
-    selector: 'app-join-items',
-    templateUrl: './join-items.component.html',
-    styleUrls: ['./join-items.component.less'],
+    selector: "app-join-items",
+    templateUrl: "./join-items.component.html",
+    styleUrls: ["./join-items.component.less"],
 })
 export class JoinItemsComponent<T = {}> {
     /**
      * spliter
      * @default ''
      */
-    @Input() spliter: string | TemplateRef<any> = '';
+    @Input() spliter: string | TemplateRef<any> = "";
     @Input() nzData: T[] = [];
     @Input() itemTemplate: TemplateRef<JoinItemsComponentContext<T>> | null =
         null;

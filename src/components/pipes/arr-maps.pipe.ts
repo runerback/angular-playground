@@ -1,7 +1,7 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform } from "@angular/core";
 
 @Pipe({
-    name: 'arrayMaps',
+    name: "arrayMaps",
 })
 export class ArrayMapsPipe implements PipeTransform {
     transform<T, K extends keyof T>(

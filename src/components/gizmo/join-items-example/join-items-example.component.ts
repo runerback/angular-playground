@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, Output } from "@angular/core";
 
 type WheelHub = {
     readonly name: string;
@@ -12,9 +12,9 @@ type WheelHub = {
 };
 
 @Component({
-    selector: 'app-join-items-example',
-    templateUrl: './join-items-example.component.html',
-    styleUrls: ['./join-items-example.component.less'],
+    selector: "app-join-items-example",
+    templateUrl: "./join-items-example.component.html",
+    styleUrls: ["./join-items-example.component.less"],
 })
 export class JoinItemsComponentExampleComponent {
     constructor() {}
@@ -23,24 +23,24 @@ export class JoinItemsComponentExampleComponent {
     get wheels(): WheelHub[] {
         return [
             {
-                name: 'Mk II',
+                name: "Mk II",
                 diameter: 18,
                 width: 8.0,
                 spoke: 10,
                 hold: 5,
                 et: 35,
-                tech: 'MAT',
-                pcd: '5x114.3',
+                tech: "MAT",
+                pcd: "5x114.3",
             },
             {
-                name: 'Mk II',
+                name: "Mk II",
                 diameter: 19,
                 width: 8.5,
                 spoke: 10,
                 hold: 5,
                 et: 35,
-                tech: 'MAT',
-                pcd: '5x114.3',
+                tech: "MAT",
+                pcd: "5x114.3",
             },
         ];
     }

@@ -1,7 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { JoinItemsComponent } from './join-items.component';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { JoinItemsComponent } from "./join-items.component";
 
-describe('SharedShowPriceComponent', () => {
+describe("SharedShowPriceComponent", () => {
     let component: JoinItemsComponent<number>;
     let fixture: ComponentFixture<JoinItemsComponent<number>>;
 
@@ -14,7 +14,7 @@ describe('SharedShowPriceComponent', () => {
         component = fixture.componentInstance;
     });
 
-    it('should create default', () => {
+    it("should create default", () => {
         fixture.detectChanges();
 
         expect(fixture.debugElement.children.length).toBe(0);

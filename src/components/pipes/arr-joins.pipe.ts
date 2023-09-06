@@ -1,20 +1,20 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform } from "@angular/core";
 
 @Pipe({
-    name: 'arrayJoins',
+    name: "arrayJoins",
 })
 export class ArrayJoinsPipe implements PipeTransform {
     transform(
         value: Array<Array<string>>,
-        joinChar: string = '',
+        joinChar: string = "",
         suffix?: string,
         prefix?: string
     ): string[] {
         return value?.map(
             (it) =>
-                (Boolean(prefix) ? prefix : '') +
+                (Boolean(prefix) ? prefix : "") +
                 it.join(joinChar) +
-                (Boolean(suffix) ? suffix : '')
+                (Boolean(suffix) ? suffix : "")
         );
     }
 }

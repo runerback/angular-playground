@@ -1,9 +1,9 @@
-import { Mixin, MixinConstructor } from './MixinTypes';
+import { Mixin, MixinConstructor } from "./MixinTypes";
 
-describe('MixIn should work', () => {
-    it('mixin example', () => {
+describe("MixIn should work", () => {
+    it("mixin example", () => {
         class OriginalDTO {
-            ID: string = '';
+            ID: string = "";
         }
 
         function ModifiedDTOMixIn(Base: MixinConstructor<OriginalDTO>) {
@@ -24,7 +24,7 @@ describe('MixIn should work', () => {
         type ModifiedDTOType = Mixin<typeof ModifiedDTOMixIn>;
 
         const original = new OriginalDTO();
-        original.ID = 'your id here';
+        original.ID = "your id here";
 
         const modified: ModifiedDTOType = new ModifiedDTO();
         modified.ID = original.ID;
